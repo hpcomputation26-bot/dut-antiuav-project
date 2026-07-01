@@ -1,0 +1,10 @@
+﻿data/detection/*
+data/tracking/*
+!data/*/.gitkeep
+*.pt
+*.pth
+mlruns/
+__pycache__/
+*.pyc
+.env
+venv/
