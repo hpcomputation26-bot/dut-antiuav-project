@@ -2,6 +2,7 @@
 data/tracking/*
 !data/*/.gitkeep
 *.pt
+!src/api/best.pt
 *.pth
 mlruns/
 __pycache__/

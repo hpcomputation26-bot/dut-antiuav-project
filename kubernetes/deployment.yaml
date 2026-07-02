@@ -1,0 +1,27 @@
+﻿apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: dut-antiuav-deployment
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: dut-antiuav
+  template:
+    metadata:
+      labels:
+        app: dut-antiuav
+    spec:
+      containers:
+        - name: dut-antiuav-container
+          image: final-project:v1
+          imagePullPolicy: Never
+          ports:
+            - containerPort: 8000
+          resources:
+            requests:
+              memory: "256Mi"
+              cpu: "125m"
+            limits:
+              memory: "512Mi"
+              cpu: "250m"

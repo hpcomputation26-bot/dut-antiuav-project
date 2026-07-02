@@ -1,0 +1,6 @@
+﻿data/
+mlruns/
+training/
+__pycache__/
+*.pyc
+venv/
